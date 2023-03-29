@@ -7,7 +7,10 @@ function* getStatisticsSaga({ payload: { country, onSuccess, onFailure } }) {
     const { data, status } = yield call(covidService.getStatistics, country);
     if (status !== 200 || data.message !== "OK") throw errors;
 
-    yield put(covidActions.setStatistics(data.data))
+    yield put(covidActions.setStatistics({
+      key: country,
+      data: data.data
+    }))
 
 
     if (onSuccess) onSuccess();

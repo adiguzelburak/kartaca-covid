@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 // Initial state
 const initialState = {
-  statistic: null,
+  statistic: {},
 };
 
 export const covidSlice = createSlice({
@@ -10,7 +10,9 @@ export const covidSlice = createSlice({
   initialState,
   reducers: {
     getStatisticsRequest() { },
-    setStatistics(state, action) { state.statistic = action.payload }
+    setStatistics(state, action) { 
+      state.statistic[action.payload.key] = action.payload.data 
+    }
   },
 });
 
