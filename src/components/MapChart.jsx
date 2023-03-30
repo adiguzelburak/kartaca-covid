@@ -20,10 +20,8 @@ export default function MapChart() {
           {({ geographies }) =>
             geographies.map((geo, index) => (
               <Link key={geo.rsmKey} to={MyRouter.detail(geo.properties.name)}>
-                <div className="text-red-400">{console.log(geo)}</div>
                 <Geography
                   geography={geo}
-                  // onClick={(deneme) => console.log({ deneme, geo })}
                   onMouseEnter={() => {
                     setHoveredCountryName(geo.properties.name);
                   }}
