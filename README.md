@@ -17,7 +17,7 @@ To run this application locally, follow these steps:
 2. Navigate to the cloned directory: cd covid-19-tracker
 3. Install the required packages: npm install
 4. Start the application: npm start
-5. The application will open in your browser: http://localhost:3000
+5. The application will open in your browser.
 
 ## How to Use
 When any country on the world map is clicked, it redirects to a page that contains detailed Covid-19 information about that country.
