@@ -14,7 +14,7 @@ This is a React application that displays the latest Covid-19 data for any count
 To run this application locally, follow these steps:
 
 1. Clone this repository: git clone https://github.com/adiguzelburak/kartaca-covid.git
-2. Navigate to the cloned directory: cd covid-19-tracker
+2. Navigate to the cloned directory: cd kartaca-covid
 3. Install the required packages: npm install
 4. Start the application: npm start
 5. The application will open in your browser.
